@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+/* Variaveis */
+:root{
+  --purple: #5280E2;
+  --green: #15CDCB;
+  --bg-dark: #212226;
+  --light-grey: #E0DEDE;
+
+  --menu-height: 75px;
+}
+
+/* Reset da página */
+*{
+  box-sizing: border-box;
+}
+
+
+html{
+  font-size: 62.5%;
+}
+
+html, body{
+margin: 0;  
+background: var(--bg-dark);
+}
+
+body, button, input, select, textarea{
+  font-family: "Poppins" sans-serif;  
+  color:white;
+}
+
+header{
+ height: calc(100vh - var(--menu-height));
+ display:flex;
+ align-items: center;
+}
+
+header .container{
+  width:50%;
+  padding: 0 100px;
+  height:fit-content;
+}
+
+header .container img{
+display: none;
+margin-bottom: 70px;
+}
+
+header .container  h1{
+ color: var(--green);
+}
+
+header .container button{
+  margin-top: 40px ;
+}
+
+h1{
+  font-size: 4.4rem;
+}
+
+h2{
+  font-size: 2.4rem;
+}
+
+h1, h2{
+  margin:0;
+  font-weight: 400;
+}
+
+p{
+  color: var(--light-grey)
+}
+
+button {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+  background: var(--purple);
+  border-radius: 16px;
+  padding:8px 35px;
+  border:0;
+  }
+
+  nav{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0;
+    background: var(--bg-dark);
+    justify-content: space-between;
+    padding: 0 100px;
+    height:var(--menu-height);
+    
+
+  }
+
+  nav img{
+    height:45px;
+  }
+
+  nav ul{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul a{
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: var(--green);
+
+  }
+
+  nav ul a svg{
+  display:none;
+  }
+
+  section{
+    height: 1500px;
+    background: purple;
+  }
+
+.button2{
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+  background: var(--purple);
+  border: 0;
+  border-radius: 16px;
+  padding: 8px 35px;
+  position: absolute;
+  width: 235px;
+  height: 50px;
+  margin: 4336px 0 0 602px;
+}
+
+
+/* Responsividade - Media Querry */
+
+/* Small desktops */
+@media (max-width: 1000px){
+            header .container {
+            width:100%;
+           }
+            nav {
+              padding: 0 30px;
+
+            }
+
+}
+
+/* Tablets */
+@media (max-width: 767px){
+             
+              header .container img{
+                display: inline;
+                }
+
+                          nav img{
+                display: none;
+              }
+
+              nav ul{
+                padding: 0 ;
+              }
+
+              nav ul a{
+                font-size: 1.6rem;
+              }
+
+}
+/* Celular */
+@media (max-width: 480px){
+  header .container {
+    padding: 0 40px;
+  }
+
+  nav{
+    padding:0 15px;
+  }
+
+  nav ul a{
+    font-size: 1.2rem;
+  }
+  nav ul a svg{
+    display: block;
+    margin: 0 auto 10px;
+
+
+  }
+}
