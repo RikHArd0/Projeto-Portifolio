@@ -47,10 +47,6 @@ display: none;
 margin-bottom: 70px;
 }
 
-header .container  h1{
- color: var(--green);
-}
-
 header .container button{
   margin-top: 40px ;
 }
@@ -82,6 +78,14 @@ button {
   border:0;
   }
 
+  .title-purple {
+    color: var(--purple);
+  }
+
+  .title-green {
+    color: var(--green);
+  }
+
   nav{
     display: flex;
     position: sticky;
@@ -92,7 +96,6 @@ button {
     padding: 0 100px;
     height:var(--menu-height);
     
-
   }
 
   nav img{
@@ -116,9 +119,23 @@ button {
   display:none;
   }
 
-  section{
-    height: 1500px;
-    background: purple;
+  .about-me{
+    display:flex;
+    padding:100px;
+  }
+
+  .about-me .container{
+    width:50%;
+    padding-right: 50px;
+  }
+
+  .about-me .img-container{
+    width:50%;
+    text-align: center;
+  }
+
+  .about-me .img-container img{
+    width:100%;
   }
 
 .button2{
@@ -178,6 +195,10 @@ button {
 
   nav{
     padding:0 15px;
+    position:fixed;
+    bottom: 0 15px;
+    width: 100%;
+    top:unset;
   }
 
   nav ul a{
