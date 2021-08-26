@@ -65,7 +65,9 @@ h1, h2{
 }
 
 p{
+  font-size: 1.6rem;
   color: var(--light-grey)
+  margin : 0;
 }
 
 button {
@@ -163,7 +165,7 @@ margin: 150px 0;
 padding: 0 100px;
 }
 
-.services-container{
+.services-container, .portfolio-container{
   display: flex;
   justify-content: space-between;
   max-width: 1200px;
@@ -196,6 +198,60 @@ text-align: center;
   margin-left: 10px;
 }
 
+.portfolio{
+  padding: 0 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  background: url('assets/images/bg.svg');
+}
+
+.portfolio .potfolio-container .portfolio-card{
+  background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(42px);
+  border: 1px solid white;
+  border-radius: 16px;
+  max-width: 360px;
+  text-align: left;
+  padding: 50px 25px;
+
+}
+
+.portfolio .portfolio-container .portfolio-card .img-container{
+  margin: 0 70px 50px;
+
+}
+
+.portfolio .portfolio-container .portfolio-card .img-container img{
+  width: 100%;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul{
+  display: flex;
+  list-style: none;
+  padding:0;
+}
+
+.portfolio .portfolio-container .portfolio-card .language-container ul li{
+  color: var(--green);
+  border: 1px solid  var(--green);
+  border-radius: 16px;
+  padding: 3px 15px;
+  
+
+}
+
+.portfolio-card .language-container ul li + li{
+  margin-left: 10px;
+}
+
+
+.portfolio-card + .portfolio-card{
+  margin-left: 10px;
+}
+
+.portfolio-card p+p{}
+
 .button2{
   font-weight: bold;
   font-size: 1.8rem;
@@ -215,70 +271,70 @@ text-align: center;
 
 /* Small desktops */
 @media (max-width: 1000px){
-            header .container {
-            width:100%;
-           }
-            nav {
-              padding: 0 30px;
+header .container {
+width:100%;
+}
+nav {
+  padding: 0 30px;
 
-            }
-            .about-me{
-              flex-direction: column;
-            }
-            .about-me .container, .about-me .img-container{
-              width: 100%;
-            }
-            .about-me .container{
-              padding-right: 0;
-            }
-            .about-me .img-container{
-              margin: 70px 0;
-            }
-            .services .services-container{
-              flex-wrap: wrap;
-              flex-direction: column;
-              align-items: center;
-            }
-            .services{
-              padding:0;
-            }            
-            .service-card{
-              height:394px
-            }
-            .service-card + .service-card{
-              margin-left: 0;
-              margin-top: 30px;
-            }
+}
+.about-me{
+  flex-direction: column;
+}
+.about-me .container, .about-me .img-container{
+  width: 100%;
+}
+.about-me .container{
+  padding-right: 0;
+}
+.about-me .img-container{
+  margin: 70px 0;
+}
+.services .services-container{
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+.services{
+  padding:0;
+}            
+.service-card{
+  height:394px
+}
+.service-card + .service-card{
+  margin-left: 0;
+  margin-top: 30px;
+}
 
 }
 
 /* Tablets */
 @media (max-width: 767px){
              
-              header .container img{
-                display: inline;
-                }
+  header .container img{
+  display: inline;
+  }
 
-                          nav img{
-                display: none;
-              }
+  nav img{
+  display: none;
+}
 
-              nav ul{
-                padding: 0 ;
-              }
+nav ul{
+  padding: 0 ;
+}
 
-              nav ul a{
-                font-size: 1.6rem;
-              }
-              .services{
-                margin: 70px 0;
-              }
-              .services-container{
-                padding: 0 20px;
-              }
-              .service .service-container{
-                padding: 0 20px;
-              }
+nav ul a{
+  font-size: 1.6rem;
+}
+.services{
+  margin: 70px 0;
+}
+.services-container{
+  padding: 0 20px;
+}
+.service .service-container{
+  padding: 0 20px;
+}
 }
 
 /* Celular */
