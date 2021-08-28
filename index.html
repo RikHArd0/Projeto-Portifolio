@@ -29,14 +29,14 @@
     <nav>
       <img src="/assets/images/logo.svg" alt="" />
         <ul>
-          <a href=""> <i data-feather="user"></i>About Me</a>
-          <a href=""> <i data-feather="briefcase"></i>Services</a>
-          <a href=""> <i data-feather="image"></i>portfolio</a>
-          <a href=""> <i data-feather="list"></i>Curriculum</a>
-          <a href=""> <i data-feather="send"></i>Contact</a>
+          <a href="#aboutme"> <i data-feather="user"></i>About Me</a>
+          <a href="#services"> <i data-feather="briefcase"></i>Services</a>
+          <a href="#portfolio"> <i data-feather="image"></i>Portfolio</a>
+          <a href="#curriculum"> <i data-feather="list"></i>Curriculum</a>
+          <a href="#contact"> <i data-feather="send"></i>Contact</a>
         </ul>
     </nav>
-    <section class="about-me">
+    <section id="aboutme" class="about-me">
       <div class="container">
         <h1 class="title-green">Sobre Mim</h1>
           <p>I'm 39 years old from Bahia, I work as a frontend developer. I'm a Software Analysis and Development student at Estácio de Sá University and study frontend development using: HTML, CSS, JS and Vue Js, with Isadora Stangarlin.
@@ -50,7 +50,7 @@
         <img src="assets/profile.png" alt="Sérgio Ricardo"></img>
       </div>
       </section>
-      <section class="services">
+      <section id="services" class="services">
         <h1 class="title-purple">Services</h1>
           <div class="services-container">
             <div class="service-card">
@@ -71,7 +71,7 @@
           </div>
         </section>
 
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
           <h1 class="title-green">Portfolio</h1>
           <div class="portfolio-container">
             <div class="portfolio-card">
@@ -125,7 +125,7 @@
           </div>
         </section>
 
-        <section class="curriculum">
+        <section id="curriculum" class="curriculum">
           <h1 class="title-green">Curriculum</h1>
           <div class="container">
             <img class="curriculum-img" src="assets/images/computador.svg">
@@ -141,13 +141,22 @@
                   <span>Exp:</span><b>HTML, CSS, JS, Vuejs</b>
                   <span>Idiomas:</span><b>Inglês(intermediário)</b>
                 </div>  
-              <button class="secondary-button"><img src="assets/images/disket.svg"> Download my curriculum </button>
-                
+              <button onCLick="window.open('https://drive.google.com/file/d/1UGtXIPA5TGkcqVJ9zsa_I8M5CS_ZJCVG/view?usp=sharing')" class="secondary-button"><img src="assets/images/disket.svg"> Download my curriculum </button>
             </div>
           </div>
-
-        </section>
-
+       </section>
+       <section id="contact" class="contact">
+         <h1>Vamos trabalhar juntos?</h1>
+         <p>Se você gostou do meu trabalho e quer que eu tire sua ideia do papel ou faça parte do seu time, entre em contato comigo!</p>
+        <button onCLick="window.open('https://api.whatsapp.com/send?phone=+5575999903751')">Entre em contato</button>
+        <div class="social-media">
+          <a href="https://www.instagram.com/ricserginho/"><img src="assets/images/instagram.svg" alt="Instagram"></a>
+          <a href="https://www.linkedin.com/in/s%C3%A9rgio-ricardo-salom%C3%A3o-dos-santos-199396210/"><img src="assets/images/linkedin.svg" alt="Linkedin"></a>
+          <a href="https://www.youtube.com/channel/UCel7_cMSNLKaHYOyVafPMMA"><img src="assets/images/youtube.svg" alt="YouTube"></a>
+          <a href="https://api.whatsapp.com/send?phone=+5575999903751"><img src="assets/images/whatsapp.svg" alt="Whatsapp"></a>
+        </div>
+       </section>
+       <p><footer>Made by Sérgio Ricardo - 2021</footer></p>
     <script>
       feather.replace()
     </script>
