@@ -1,164 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
-    <link rel="stylesheet" href="reset.css" />
 
-    <script src="https://unpkg.com/feather-icons"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="reset.css" />
 
-    <title>Projeto Site Curriculo</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <img src="/assets/images/logo.svg" alt="" />
-        <h2>Hello,</h2>
-        <h1 class="title-green">I am Sérgio Ricardo</h1>
-        <p>
-          I'm an ADS student at Estácio de Sá University and i'm taking a
-          Front-End course with Isadora Stangarlin, where i'm learning HTML and
-          CSS, JavaScript with Vue Js. I love learning new things and working as
-          a team.
-        </p>
-        <button>Contact Me</button>
-      </div>
-    </header>
-    <nav>
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <title>Projeto Site Curriculo</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
       <img src="/assets/images/logo.svg" alt="" />
-        <ul>
-          <a href="#aboutme"> <i data-feather="user"></i>About Me</a>
-          <a href="#services"> <i data-feather="briefcase"></i>Services</a>
-          <a href="#portfolio"> <i data-feather="image"></i>Portfolio</a>
-          <a href="#curriculum"> <i data-feather="list"></i>Curriculum</a>
-          <a href="#contact"> <i data-feather="send"></i>Contact</a>
-        </ul>
-    </nav>
-    <section id="aboutme" class="about-me">
-      <div class="container">
-        <h1 class="title-green">About Me</h1>
-          <p>I'm from Bahia, I work as a frontend developer. I'm a Software Analysis and Development student at Estácio de Sá University and study frontend development using: HTML, CSS, JS and Vue Js, with Isadora Stangarlin.
-            <br><br>
-            I'm a technology, games and music lover, I love studying about programming, new technologies and I'm always ready for a new challenges. 
-          </p>
+      <h2>Hello,</h2>
+      <h1 class="title-green">I am Sérgio Ricardo</h1>
+      <p>
+        I'm an ADS student at Estácio de Sá University and i'm taking a
+        Front-End course with Násser Yousef Ali, where i'm learning HTML and
+        CSS, JavaScript with Vue Js. I love learning new things and working as
+        a team.
+      </p>
+      <button>Contact Me</button>
+    </div>
+  </header>
+  <nav>
+    <img src="/assets/images/logo.svg" alt="" />
+    <ul>
+      <a href="#aboutme"> <i data-feather="user"></i>About Me</a>
+      <a href="#services"> <i data-feather="briefcase"></i>Services</a>
+      <a href="#portfolio"> <i data-feather="image"></i>Portfolio</a>
+      <a href="#curriculum"> <i data-feather="list"></i>Curriculum</a>
+      <a href="#contact"> <i data-feather="send"></i>Contact</a>
+    </ul>
+  </nav>
+  <section id="aboutme" class="about-me">
+    <div class="container">
+      <h1 class="title-green">About Me</h1>
+      <p>I'm from Bahia, I work as a frontend developer. I'm a Software Analysis and Development student at Estácio de
+        Sá University and study frontend development using: HTML, CSS, JS and Vue Js, with Isadora Stangarlin.
+        <br><br>
+        I'm a technology, games and music lover, I love studying about programming, new technologies and I'm always
+        ready for a new challenges.
+      </p>
+    </div>
+    <div class="img-container">
+      <div class="line green"></div>
+      <div class="line purple"></div>
+      <img src="assets/profile.png" alt="Sérgio Ricardo"></img>
+    </div>
+  </section>
+  <section id="services" class="services">
+    <h1 class="title-purple">Services</h1>
+    <div class="services-container">
+      <div class="service-card">
+        <img src="assets/images/window.png" alt="Icone Janela Browser">
+        <h2>Website Development</h2>
+        <p>Development of business websites. Make your business easily found online. </p>
       </div>
-      <div class="img-container">
-        <div class="line green"></div>
-        <div class="line purple"></div>
-        <img src="assets/profile.png" alt="Sérgio Ricardo"></img>
+      <div class="service-card">
+        <img src="assets/images/code.png" alt="Icone Janela Browser">
+        <h2>Web Development</h2>
+        <p>Development of web applications as bespoke management systems. </p>
       </div>
-      </section>
-      <section id="services" class="services">
-        <h1 class="title-purple">Services</h1>
-          <div class="services-container">
-            <div class="service-card">
-              <img src="assets/images/window.png" alt="Icone Janela Browser">
-                <h2>Website Development</h2>
-                  <p>Development of business websites. Make your business easily found online. </p>
-            </div>
-            <div class="service-card">
-               <img src="assets/images/code.png" alt="Icone Janela Browser">
-                <h2>Web Development</h2>
-                  <p>Development of web applications as bespoke management systems. </p>
-              </div>
-            <div class="service-card">
-                <img src="assets/images/android.png" alt="Icone Janela Browser">
-                  <h2>Mobile Development</h2>
-                   <p>Development of mobile applications for Android system. </p>
-            </div>
-          </div>
-        </section>
+      <div class="service-card">
+        <img src="assets/images/android.png" alt="Icone Janela Browser">
+        <h2>Mobile Development</h2>
+        <p>Development of mobile applications for Android system. </p>
+      </div>
+    </div>
+  </section>
 
-        <section id="portfolio" class="portfolio">
-          <h1 class="title-green">Portfolio</h1>
-          <div class="portfolio-container">
-            <div class="portfolio-card">
-              <div class="img-container">
-                <div class="line green"></div>
-                <img src="assets/images/portlinktree.svg" alt="Imagem do portfolio" />
-               </div>
-               <div class="language-container">
-                 <ul>
-                   <li>HTML</li>
-                   <li>CSS</li>
-                   <li>JS</li>
-                 </ul>
-               </div>
-               <p><b>Linktree</b></p>
-               <p>Linktree
-                Project made using html, css and js aiming to be a link grouper for instagram.</p>
-            </div>
-            <div class="portfolio-card">
-              <div class="img-container">
-                <div class="line green"></div>
-                <img src="assets/images/portlinktree.svg" alt="Imagem do portfolio" />
-               </div>
-               <div class="language-container">
-                 <ul>
-                   <li>HTML</li>
-                   <li>CSS</li>
-                   <li>JS</li>
-                 </ul>
-               </div>
-               <p><b>Linktree</b></p>
-               <p>Linktree
-                Project made using html, css and js aiming to be a link grouper for instagram.</p>
-            </div>
-            <div class="portfolio-card">
-              <div class="img-container">
-                <div class="line green"></div>
-                <img src="assets/images/portlinktree.svg" alt="Imagem do Portfolio" />
-              </div>
-               <div class="language-container">
-                 <ul>
-                   <li>HTML</li>
-                   <li>CSS</li>
-                   <li>JS</li>
-                 </ul>
-               </div>
-               <p><b>Linktree</b></p>
-               <p>Linktree
-                Project made using html, css and js aiming to be a link grouper for instagram.</p>
-            </div>
-          </div>
-        </section>
-
-        <section id="curriculum" class="curriculum">
-          <h1 class="title-green">Curriculum</h1>
-          <div class="container">
-            <img class="curriculum-img" src="assets/images/computador.svg">
-            <div class="content">
-              <div class="curriculum-info">
-                  <span>Name:</span><b>Sérgio Ricardo</b>
-                  <span>Age:</span><b></b>
-                  <span>Background:</span><b>Analysis and Systems Development</b>
-                  <span>City:</span><b>Feira de Santana</b>
-                  <span>Phone:</span><b>+55(75)99990-3751</b>
-                  <span>E-mail:</span><b>sergio.ricardo_@outlook.com</b>
-                  <span>Freelance:</span><b>Available</b>
-                  <span>Exp:</span><b>HTML, CSS, JS, Vuejs</b>
-                  <span>Idiomas:</span><b>Inglês(intermediário)</b>
-                </div>  
-              <button onCLick="window.open('https://drive.google.com/file/d/1UGtXIPA5TGkcqVJ9zsa_I8M5CS_ZJCVG/view?usp=sharing')" class="secondary-button"><img src="assets/images/disket.svg"> Download my curriculum </button>
-            </div>
-          </div>
-       </section>
-       <section id="contact" class="contact">
-         <h1>Let's work together?</h1>
-         <p>If you liked my work and want me to get your idea off the ground or join your team, contact me!</p>
-        <button onCLick="window.open('https://api.whatsapp.com/send?phone=+5575999903751')">Contact me</button>
-        <div class="social-media">
-          <a href="https://www.instagram.com/ricserginho/"><img src="assets/images/instagram.svg" alt="Instagram"></a>
-          <a href="https://www.linkedin.com/in/s%C3%A9rgio-ricardo-salom%C3%A3o-dos-santos-199396210/"><img src="assets/images/linkedin.svg" alt="Linkedin"></a>
-          <a href="https://www.youtube.com/channel/UCel7_cMSNLKaHYOyVafPMMA"><img src="assets/images/youtube.svg" alt="YouTube"></a>
-          <a href="https://api.whatsapp.com/send?phone=+5575999903751"><img src="assets/images/whatsapp.svg" alt="Whatsapp"></a>
+  <section id="portfolio" class="portfolio">
+    <h1 class="title-green">Portfolio</h1>
+    <div class="portfolio-container">
+      <div class="portfolio-card">
+        <div class="img-container">
+          <div class="line green"></div>
+          <img src="assets/images/portlinktree.svg" alt="Imagem do portfolio" />
         </div>
-       </section>
-       <p><footer>Made by Sérgio Ricardo - 2021</footer></p>
-    <script>
-      feather.replace()
-    </script>
-  </body>
+        <div class="language-container">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+          </ul>
+        </div>
+        <p><b>Linktree</b></p>
+        <p>Linktree
+          Project made using html, css and js aiming to be a link grouper for instagram.</p>
+      </div>
+      <div class="portfolio-card">
+        <div class="img-container">
+          <div class="line green"></div>
+          <img src="assets/images/portlinktree.svg" alt="Imagem do portfolio" />
+        </div>
+        <div class="language-container">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+          </ul>
+        </div>
+        <p><b>Linktree</b></p>
+        <p>Linktree
+          Project made using html, css and js aiming to be a link grouper for instagram.</p>
+      </div>
+      <div class="portfolio-card">
+        <div class="img-container">
+          <div class="line green"></div>
+          <img src="assets/images/portlinktree.svg" alt="Imagem do Portfolio" />
+        </div>
+        <div class="language-container">
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+          </ul>
+        </div>
+        <p><b>Linktree</b></p>
+        <p>Linktree
+          Project made using html, css and js aiming to be a link grouper for instagram.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="curriculum" class="curriculum">
+    <h1 class="title-green">Curriculum</h1>
+    <div class="container">
+      <img class="curriculum-img" src="assets/images/computador.svg">
+      <div class="content">
+        <div class="curriculum-info">
+          <span>Name:</span><b>Sérgio Ricardo</b>
+          <span>Age:</span><b></b>
+          <span>Background:</span><b>Analysis and Systems Development</b>
+          <span>City:</span><b>Feira de Santana</b>
+          <span>Phone:</span><b>+55(75)99990-3751</b>
+          <span>E-mail:</span><b>sergio.ricardo_@outlook.com</b>
+          <span>Freelance:</span><b>Available</b>
+          <span>Exp:</span><b>HTML, CSS, JS, Vuejs</b>
+          <span>Idiomas:</span><b>Inglês(intermediário)</b>
+        </div>
+        <button
+          onCLick="window.open('https://drive.google.com/file/d/1UGtXIPA5TGkcqVJ9zsa_I8M5CS_ZJCVG/view?usp=sharing')"
+          class="secondary-button"><img src="assets/images/disket.svg"> Download my curriculum </button>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="contact">
+    <h1>Let's work together?</h1>
+    <p>If you liked my work and want me to get your idea off the ground or join your team, contact me!</p>
+    <button onCLick="window.open('https://api.whatsapp.com/send?phone=+5575999903751')">Contact me</button>
+    <div class="social-media">
+      <a href="https://www.instagram.com/ricserginho/"><img src="assets/images/instagram.svg" alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/s%C3%A9rgio-ricardo-salom%C3%A3o-dos-santos-199396210/"><img
+          src="assets/images/linkedin.svg" alt="Linkedin"></a>
+      <a href="https://www.youtube.com/channel/UCel7_cMSNLKaHYOyVafPMMA"><img src="assets/images/youtube.svg"
+          alt="YouTube"></a>
+      <a href="https://api.whatsapp.com/send?phone=+5575999903751"><img src="assets/images/whatsapp.svg"
+          alt="Whatsapp"></a>
+    </div>
+  </section>
+  <p>
+  <footer>Made by Sérgio Ricardo - 2021</footer>
+  </p>
+  <script>
+    feather.replace()
+  </script>
+</body>
+
 </html>
